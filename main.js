@@ -39,6 +39,34 @@ $("#slide_toggle").click(function () {
   $("#add_class").click(function() {
     $("span").addClass("purple")
   })
-  //add BEFORE word before the span text
-  
+  //add CODING-DOJO before the span text
+  $("#before").click(function() {
+    $("span").before("Coding-dojo ");
+  })
+
+  //add CODING-DOJO after the span text
+  $("#after").click(function() {
+    $("span").after(" WEB DEVELOPMENT ");
+  })
+  //Append jQuery word to span
+  $("#append").click(function() {
+    $("span").append(" jQuery ");
+  })
+  //change html tag span to h1
+  $("#html").click(function() {
+    $("span").html("<h1>H1 Replaced span tag!!</h1>");
+  })
+  //Get the attributes of paragraph
+  $("#attri").click(() => { 
+    console.log($("p").attr("id"))
+  })
+  //get the value of span
+  $("#val").click(function() {
+    console.log($("input").val());
+  })
+  //get or set the text of span
+  $("#text").click(_=> {
+    $("span").text("rashid is the new king!")
+    console.log($("span").text());
+  })
 })
